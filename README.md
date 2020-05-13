@@ -5,7 +5,7 @@
 This package generates synthetic fast frequency regulation dispatches for simulation and emulation purposes.
 
 ## General
-The balance of demand and supply in the electric power grid is a crucial element to grid reliability. While balancing is typically provided by conventional power plants, with spinning generators, distributed energy resources (DER) and especially electric vehicles (EVs) pose a great potential to provide such service. This project conducted a field demonstration at the Los Angeles Air Force Base (LA-AFB) where a fleet of mixed-use bi-directional EVs were actively participating in the California Independent System Operator (CAISO) market for frequency regulation. While participation in regulation markests is promising, a major drawback in designing control systems and assessing potential revenue is the lack of example frequency regulation signals. This project introduces an open-source dataset for 143 days of four-second regulation data, and the SynAS Python module to synthetically generate frequency regulation signals of arbitrary length.
+The balance of demand and supply in the electric power grid is a crucial element to grid reliability. While balancing is typically provided by conventional power plants, with spinning generators, distributed energy resources (DER) and especially electric vehicles (EVs) pose a great potential to provide such service. This project conducted a field demonstration at the [Los Angeles Air Force Base](https://eta.lbl.gov/news/article/58888/los-angeles-air-force-base-demo) (LA-AFB) where a fleet of mixed-use bi-directional EVs were actively participating in the [California Independent System Operator](http://www.caiso.com/Pages/default.aspx) (CAISO) market for frequency regulation. While participation in regulation markests is promising, a major drawback in designing control systems and assessing potential revenue is the lack of example frequency regulation signals. This project introduces an open-source dataset for 143 days of four-second regulation data, and the SynAS Python module to synthetically generate frequency regulation signals of arbitrary length.
 
 The SynAS module can be used to generate fast frequency regulation dispatches in two modes:
 * Batch Mode: Generates a single dataframe of synthetic dispatch of any length.
@@ -14,7 +14,7 @@ The SynAS module can be used to generate fast frequency regulation dispatches in
 The SynAS module was developed based on actual CAISO dispatch signals for stationary battery with a capacity of 100 MWh (100 MW). The synthetically generated profiles are statistically similar to the actual signals. Below is an example signal generated in the batch mode for twelve hours, in a four second timestep.
 ![Example](documentation/result_example.jpg)
 
-Further information can be found in the full project report listed in the **Cite** section.
+Further information can be found in the full project report listed in the [Cite](https://github.com/LBNL-ETA/SynAS#cite) section.
 
 ## Getting Started
 The following link permits users to clone the source directory containing the [SynAS](https://github.com/LBNL-ETA/SynAS) package.
